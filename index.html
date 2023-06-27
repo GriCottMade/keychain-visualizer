@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Our Funky HTML Page</title>
+    <meta name="description" content="Our first page" />
+    <meta name="keywords" content="html tutorial template" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="row l">
+      <div class="col-4 pl-5">
+        <img src="gricott3d.png" class="mt-4 ml-2">
+      </div>
+      <div class="col">
+        <div class="row mb-1">
+          <label class="form-label col-2">Font </label>
+          <div class="col">
+            <select class="form-select" onchange="changeFont($(this).val())">
+              <option>Select the Font</option>
+              <option value="Font1">Font #1</option>
+              <option value="Font2">Font #2</option>
+            </select>
+          </div>
+        </div>
+        <div class="row mb-1">
+          <label class="col-2 form-label">Base Color </label>
+          <div class="col">
+            <select class="form-select" onchange="changeBG($(this).val())">
+              <option>Select the Base Color</option>
+              <option value="#F9F4F4">White</option>
+              <option value="#CE0909">Red</option>
+              <option value="#58E11C">Green</option>
+              <option value="#F6EB00">Yellow</option>
+              <option value="#000000">Black</option>
+              <option value="#000BF6">Blue</option>
+              <option value="#F66100">Orange</option>
+              <option value="#777675">Grey</option>
+            </select>
+          </div>
+        </div>
+        <div class="row mb-1">
+          <label class="form-label col-2">Text Color </label>
+          <div class="col">
+            <select
+              class="form-select"
+              onchange="changeTextColor($(this).val())"
+            >
+              <option>Select the Text Color</option>
+              <option value="#F9F4F4">White</option>
+              <option value="#CE0909">Red</option>
+              <option value="#58E11C">Green</option>
+              <option value="#F6EB00">Yellow</option>
+              <option value="#000000">Black</option>
+              <option value="#000BF6">Blue</option>
+              <option value="#F66100">Orange</option>
+              <option value="#777675">Grey</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+            
+        <label class="form-label col-2">Text</label>
+        <input type="text" placeholder="Key chain Text" id="myInput" class="col" autofocus/>
+        </div>
+      </div>
+      <div class="row text-center">
+        
+        <h1>Keychain Visualizer</h1>
+      </div>
+    </div>
+
+    <div class="p">
+        <div class="started">Type the text you would like on your key chain.
+            <br>Then Select the colors above.
+        </div>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+    crossorigin="anonymous"
+  ></script>
+  <script src="jquery.stroke.min.js"></script>
+  <script>
+    var piv = "#F9F4F4";
+    function changeFont(value) {
+      $(".p").css("font-family", value);
+    }
+
+    function changeBG(value) {
+      piv = value;
+      $(".p").stroke({
+        size: 20,
+        color: piv,
+      });
+    }
+
+    function changeTextColor(value) {
+      $(".p").css("color", value);
+    }
+
+    $("#myInput").on("input", function () {
+      // Print entered value in a div box
+      $(".p").text($(this).val());
+    });
+  </script>
+</html>

@@ -1,0 +1,35 @@
+
+
+@font-face {
+    font-family: Font1;
+    src: url(fonts/DegulandPlayful-6YrqY.otf)  format('opentype');
+ }
+
+@font-face {
+    font-family: Font2;
+    src: url(fonts/Sansilk-p71dD.ttf);
+}
+
+
+.p {
+    font-size: 150px;
+    margin-top: 100px;
+    padding: 00px auto;
+    text-align: center;
+   text-shadow: 0 0 0 red;
+}
+
+.l {
+    background-color: bisque;
+    border-bottom: 1px solid #000;
+    padding: 8px;
+}
+
+.started {
+    color: #B0B0B0;
+    font-size: 65px;
+}
+
+.logo {
+    
+}
