@@ -13,73 +13,82 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <div class="row l">
-      <div class="col-4 pl-5">
-        <img src="gricott3d.png" class="mt-4 ml-2">
-      </div>
-      <div class="col">
-        <div class="row mb-1">
-          <label class="form-label col-2">Font </label>
-          <div class="col">
-            <select class="form-select" onchange="changeFont($(this).val())">
-              <option>Select the Font</option>
-              <option value="Font1">Font #1</option>
-              <option value="Font2">Font #2</option>
-            </select>
-          </div>
+  <body class="bg-dark-subtle">
+    <div class="container-fluid">
+      <div class="row p-2">
+        <div class="col-2">
+          <img src="gricott3d.png" />
         </div>
-        <div class="row mb-1">
-          <label class="col-2 form-label">Base Color </label>
-          <div class="col">
-            <select class="form-select" onchange="changeBG($(this).val())">
-              <option>Select the Base Color</option>
-              <option value="#F9F4F4">White</option>
-              <option value="#CE0909">Red</option>
-              <option value="#58E11C">Green</option>
-              <option value="#F6EB00">Yellow</option>
-              <option value="#000000">Black</option>
-              <option value="#000BF6">Blue</option>
-              <option value="#F66100">Orange</option>
-              <option value="#777675">Grey</option>
-            </select>
-          </div>
-        </div>
-        <div class="row mb-1">
-          <label class="form-label col-2">Text Color </label>
-          <div class="col">
-            <select
-              class="form-select"
-              onchange="changeTextColor($(this).val())"
-            >
-              <option>Select the Text Color</option>
-              <option value="#F9F4F4">White</option>
-              <option value="#CE0909">Red</option>
-              <option value="#58E11C">Green</option>
-              <option value="#F6EB00">Yellow</option>
-              <option value="#000000">Black</option>
-              <option value="#000BF6">Blue</option>
-              <option value="#F66100">Orange</option>
-              <option value="#777675">Grey</option>
-            </select>
-          </div>
-        </div>
-        <div class="row">
-            
-        <label class="form-label col-2">Text</label>
-        <input type="text" placeholder="Key chain Text" id="myInput" class="col" autofocus/>
+        <div class="col text-center align-middle">
+          <h1 class="align-middle">Key Chain Visualizer by GriCott 3D</h1>
         </div>
       </div>
-      <div class="row text-center">
-        
-        <h1>Keychain Visualizer</h1>
-      </div>
-    </div>
 
-    <div class="p">
-        <div class="started">Type the text you would like on your key chain.
-            <br>Then Select the colors above.
+      <div class="row p-2 mt-5 mb-3">
+        <input
+          type="text"
+          class="form-control form-control-lg"
+          placeholder="Key chain Text"
+          id="myInput"
+          class="col"
+          tabindex="1"
+          autofocus
+        />
+      </div>
+      <div class="row mb-3">
+        <div class="col">
+          <select
+            class="form-select form-select-lg p-2"
+            onchange="changeFont($(this).val())"
+            tabindex="2"
+          >
+            <option>Select the Font</option>
+            <option value="Font1">Font #1</option>
+            <option value="Font2">Font #2</option>
+          </select>
         </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col">
+          <select
+            class="form-select form-select-lg"
+            onchange="changeBG($(this).val())"
+            tabindex="3"
+          >
+            <option>Select the Base Color</option>
+            <option value="#F9F4F4">White</option>
+            <option value="#CE0909">Red</option>
+            <option value="#58E11C">Green</option>
+            <option value="#F6EB00">Yellow</option>
+            <option value="#000000">Black</option>
+            <option value="#000BF6">Blue</option>
+            <option value="#F66100">Orange</option>
+            <option value="#777675">Grey</option>
+          </select>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col">
+          <select
+            class="form-select form-select-lg"
+            onchange="changeTextColor($(this).val())"
+            tabindex="4"
+          >
+            <option>Select the Text Color</option>
+            <option value="#F9F4F4">White</option>
+            <option value="#CE0909">Red</option>
+            <option value="#58E11C">Green</option>
+            <option value="#F6EB00">Yellow</option>
+            <option value="#000000">Black</option>
+            <option value="#000BF6">Blue</option>
+            <option value="#F66100">Orange</option>
+            <option value="#777675">Grey</option>
+          </select>
+        </div>
+      </div>
+      <div class="row mt-6">
+        <div class="col p text-center mt-6 pt-6"></div>
+      </div>
     </div>
   </body>
   <script
