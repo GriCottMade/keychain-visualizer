@@ -21,6 +21,8 @@
         </div>
         <div class="col text-center align-middle">
           <h1 class="align-middle">Key Chain Visualizer by GriCott 3D</h1>
+          <p class="fs-5">Use this tool to give you a rough idea of the finished product.</p>
+          <p class="fs-4 fw-bolder">!! THIS IS NOT EXACTLY HOW YOUR KEYCHAIN WILL LOOK !!</p>
         </div>
       </div>
 
@@ -28,7 +30,7 @@
         <input
           type="text"
           class="form-control form-control-lg"
-          placeholder="Key chain Text"
+          placeholder="Type what you want on your keychain"
           id="myInput"
           class="col"
           tabindex="1"
@@ -43,8 +45,20 @@
             tabindex="2"
           >
             <option>Select the Font</option>
-            <option value="Font1">Font #1</option>
-            <option value="Font2">Font #2</option>
+            <option style="font-family: Font1;" value="Font1">Style 1  - Your Name</option>
+            <option style="font-family: Font2;" value="Font2">Style 2 - Your Name</option> 
+            <option style="font-family: Font3;" value="Font3">Style 3 - Your Name</option>
+            <option style="font-family: Font4;" value="Font4">Style 4 - Your Name</option>
+            <option style="font-family: Font5;" value="Font5">Style 5 - Your Name</option>
+            <option style="font-family: Font6;" value="Font6">Style 6 - Your Name</option>
+            <option style="font-family: Font7;" value="Font7">Style 7 - Your Name</option>
+            <option style="font-family: Font8;" value="Font8">Style 8 - Your Name</option>
+            <option style="font-family: Font9;" value="Font9">Style 9 - Your Name</option>
+            <option style="font-family: Font10;" value="Font10">Style 10 - Your Name</option>
+            <option style="font-family: Font11;" value="Font11">Style 11 - Your Name</option>
+            <option style="font-family: Font12;" value="Font12">Style 12 - Your Name</option>
+            <option style="font-family: Font13;" value="Font13">Style 13 - Your Name</option>
+            <option style="font-family: Font14;" value="Font14">Style 14 - Your Name</option>
           </select>
         </div>
       </div>
@@ -87,7 +101,7 @@
         </div>
       </div>
       <div class="row mt-6">
-        <div class="col p text-center mt-6 pt-6"></div>
+        <div class="col p text-center mt-6 pt-6" style="font-family: Font1;"></div>
       </div>
     </div>
   </body>
@@ -121,7 +135,6 @@
     }
 
     $("#myInput").on("input", function () {
-      // Print entered value in a div box
       $(".p").text($(this).val());
     });
   </script>

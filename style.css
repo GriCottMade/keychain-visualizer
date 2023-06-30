@@ -2,13 +2,74 @@
 
 @font-face {
     font-family: Font1;
-    src: url(fonts/DegulandPlayful-6YrqY.otf)  format('opentype');
+    src: url(fonts/font01_mike_sans.ttf) ;
  }
 
 @font-face {
     font-family: Font2;
-    src: url(fonts/Sansilk-p71dD.ttf);
+    src: url(fonts/font02_mouldy_cheese.ttf);
 }
+
+@font-face {
+    font-family: Font3;
+    src: url(fonts/font03_permanent_marker.ttf);
+}
+
+@font-face {
+    font-family: Font4;
+    src: url(fonts/font04_phat.ttf);
+}
+
+@font-face {
+    font-family: Font5;
+    src: url(fonts/font05_planet_comic.otf) format('opentype');
+}
+
+@font-face {
+    font-family: Font6;
+    src: url(fonts/font06_cat_walzhari.ttf);
+}
+
+@font-face {
+    font-family: Font7;
+    src: url(fonts/font07_dancing_script.otf) format('opentype');
+}
+
+@font-face {
+    font-family: Font8;
+    src: url(fonts/font08_akar_rumput.otf) format('opentype');
+}
+
+@font-face {
+    font-family: Font9;
+    src: url(fonts/font09_attack_graffiti.otf) format('opentype');
+}
+
+@font-face {
+    font-family: Font10;
+    src: url(fonts/font10_blankit.otf) format('opentype');
+}
+
+@font-face {
+    font-family: Font11;
+    src: url(fonts/font11_islander.otf) format('opentype');
+}
+
+@font-face {
+    font-family: Font12;
+    src: url(fonts/font12_deguland.otf) format('opentype');
+}
+
+@font-face {
+    font-family: Font13;
+    src: url(fonts/font13_sanssilk.ttf);
+}
+
+@font-face {
+    font-family: Font14;
+    src: url(fonts/font14_caeser_dressing.ttf);
+}
+
 
 
 .p {
